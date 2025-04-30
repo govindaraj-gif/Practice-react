@@ -5,7 +5,7 @@ import { useShoppingCart } from "../context/shpooigCartContext";
 type StoreItemProps = {
     id:number,
     name:string,
-    price:string,
+    price:number,
     url:string
 }
 
