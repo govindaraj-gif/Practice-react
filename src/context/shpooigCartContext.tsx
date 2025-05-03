@@ -1,5 +1,4 @@
 import { Children, createContext, ReactNode, useContext, useState } from "react"
-import { Item } from "react-bootstrap/lib/Breadcrumb"
 
 
 type ShoppingCartProviderProps = {
@@ -34,6 +33,7 @@ export function ShoppingCartProvider({ children } : ShoppingCartProviderProps){
 
     const openCart = () => setIsOpen(true)
     const closeCart = () => setIsOpen(false)
+    console.log(isOpen)
 
     function getItemQuantity(id:number){
         return cartItems.find((item) => item.id == id)?.quantity || 0;
